@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body  onLoad="scrollDiv_init()">
     <div class="parallax" id="prlx">
         <div class="object-wrapper speed-1">
             <div class="object object-1-bg"></div>
@@ -64,12 +64,37 @@
             </div>
         </div>
         <div class="page-content">
-            <a>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus in est odio, earum dolore blanditiis dicta consequuntur inventore omnis illum! Rerum fuga provident ipsum. Repudiandae possimus quas minima delectus mollitia?</a>
+            <div class="page-content-landing">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus in est odio, earum dolore blanditiis dicta consequuntur inventore omnis illum! Rerum fuga provident ipsum. Repudiandae possimus quas minima delectus mollitia?
+            </div>
         </div>
     </div>
-
 </body>
-<script>
-    
+<script language="javascript">
+    window.onload = function() {
+        scrollDiv_init();
+    };
+    ScrollRate = 1;
+    function scrollDiv_init() {
+        DivElmnt = document.getElementById('prlx');
+        PreviousScrollTop = DivElmnt.scrollTop;
+        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+        ScrollInterval = setInterval('scrollDiv()', ScrollRate);  
+        ReachedMaxScroll = false;
+        DivElmnt.scrollTop = 0;
+        PreviousScrollTop  = 0;
+    }
+    function scrollDiv() {
+        if (!ReachedMaxScroll) {
+            DivElmnt.scrollTop = PreviousScrollTop;
+            PreviousScrollTop++;
+            ReachedMaxScroll = DivElmnt.scrollTop >= ((DivElmnt.scrollHeight) - DivElmnt.offsetHeight);
+        }
+        else {
+            ReachedMaxScroll = false;
+        }
+    }
 </script>
 </html>
