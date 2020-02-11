@@ -2,11 +2,11 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Engagement&display=swap" rel="stylesheet">
 </head>
 <body  onLoad="scrollDiv_init()">
     <div class="parallax" id="prlx">
@@ -65,7 +65,17 @@
         </div>
         <div class="page-content">
             <div class="page-content-landing">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus in est odio, earum dolore blanditiis dicta consequuntur inventore omnis illum! Rerum fuga provident ipsum. Repudiandae possimus quas minima delectus mollitia?
+                <div class="page-content-landing-nav">
+                    <div class="page-content-landing-nav-square"></div>
+                    <div class="page-content-landing-nav-backsquare"></div>
+                    <div class="page-content-landing-branding"></div>
+                </div>
+                <div class="page-content-landing-content"></div>
+                <h1> Visite <spam class="cursive">As montanhas</spam></h1>
+                <a href="./landing-page/index.html">Faça sua reserva</a>
+                <div class="footer">
+                    Copyright © 2020 Matheus Cunha - Todos os direitos reservados
+                </div>
             </div>
         </div>
     </div>
@@ -74,14 +84,13 @@
     window.onload = function() {
         scrollDiv_init();
     };
-    ScrollRate = 1;
     function scrollDiv_init() {
         DivElmnt = document.getElementById('prlx');
         PreviousScrollTop = DivElmnt.scrollTop;
-        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
-        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
-        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
-        ScrollInterval = setInterval('scrollDiv()', ScrollRate);  
+        ScrollInterval = setInterval('scrollDiv()');
+        ScrollInterval = setInterval('scrollDiv()');
+        ScrollInterval = setInterval('scrollDiv()');
+        ScrollInterval = setInterval('scrollDiv()');
         ReachedMaxScroll = false;
         DivElmnt.scrollTop = 0;
         PreviousScrollTop  = 0;
@@ -98,3 +107,14 @@
     }
 </script>
 </html>
+
+<!-- 
+
+Projeto:
+    Estrutura
+        Reservas 
+        Contato
+    Responsividade
+    Ajustes do JS 
+
+-->
