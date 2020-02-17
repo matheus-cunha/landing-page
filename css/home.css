@@ -16,10 +16,26 @@ nav{
   width: 15rem;
   position: absolute;
   top: 200%;
-  left: 5%;
-  /* transform: translateX(-50%); */
-  /* z-index: 8; */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
   opacity: 1;
+}
+
+.branding-shadow{
+  background-image: url(../img/logo-off.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+  width: 15rem;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 7;
+  opacity: 1;
+  filter: blur(20px) brightness(-100%) opacity(95%);
 }
 
 .nav-ribbon{
@@ -62,7 +78,7 @@ nav{
   background-color: #a6afdd ;
   height: 50rem;
   width: 100%;
-  background-image: url(../img/arvores-04.png);
+  background-image: url(../img/Home-carousel/Blue\ Mountain\ Hotel.jpg);
   background-size: cover;
   position: relative;
 }
@@ -84,10 +100,10 @@ nav{
   text-decoration: none;
 }
 
-.slide-01{}
+/* .slide-01{}
 .slide-02{}
 .slide-03{}
-.slide-04{}
+.slide-04{} */
 
 .book-now{
   height: 8rem;
@@ -104,6 +120,7 @@ nav{
   height: 2rem;
   width: 20rem;
   margin-right: 1rem;
+  padding: 0 1rem;
   text-overflow: ellipsis;
 }
 
@@ -141,6 +158,7 @@ nav{
 
 .book-now .title{
   margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
 }
 
 .body-wrapper-disclaimer{
@@ -181,6 +199,14 @@ nav{
   text-decoration: none;
 }
 
+.see-more:hover{
+  background-color: #051766;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+  border-width: 2px;
+}
+
 .container-wrap{
   padding: 2rem 0;
   position: relative;
@@ -218,6 +244,28 @@ nav{
   text-align: center;
   padding: 0.5rem;
   border-radius: 20px;
+  cursor: default;
+}
+
+.amenities:hover i{
+  animation-name: little-shake;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+@keyframes little-shake {
+  0%{
+    transform: rotate(15deg);
+  }
+  25%{
+    transform: rotate(-25deg);
+  }
+  50%{
+    transform: rotate(25deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 .amenities i{
@@ -238,17 +286,20 @@ nav{
   justify-content: top;
   align-items: center;
   flex-direction: column;
+  text-decoration: none;
+}
+
+.room .img:hover{
+  opacity: 0.7;
+  transition: 0.25s;
 }
 
 .room .img{
   height: 10rem;
   width: 100%;
-  /* margin: 1rem 1rem; */
-  background-image: url(../img/arvores-04.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: bisque; */
 }
 
 .room .sub{
@@ -257,6 +308,17 @@ nav{
   font-weight: bold;
 }
 
+#room01{
+  background-image: url(../img/Hotel-imgs/Chale-6-pessoas.jpg);
+}
+
+#room02{
+  background-image: url(../img/Hotel-imgs/Chale-4-pessoas.jpg);
+}
+
+#room03{
+  background-image: url(../img/Hotel-imgs/Chale-2-pessoas.jpg);
+}
 
 .body-wrapper-location iframe{
   width: 100%;
@@ -271,6 +333,7 @@ footer{
   align-items: center;
   color: #fff;
   padding: 1rem;
+  cursor: default;
 }
 
 .footer-wrapper{
