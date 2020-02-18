@@ -1,4 +1,4 @@
-<a href=""><img src="./img/readme/readme-parallax.gif" alt="Main animation" height="200"></a>
+<img src="./img/Readme/readme-parallax.gif" alt="Main animation" height="200">
 
 # Blue Mountain - Resort & Spa.
 
