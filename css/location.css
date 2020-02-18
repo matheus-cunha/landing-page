@@ -1,0 +1,163 @@
+.body-wrapper{
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+  
+.body-wrapper-disclaimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-wrap{
+    padding: 2rem 0;
+    position: relative;
+    margin: 2rem 0;
+}
+   
+.body{
+    height: 165rem;
+    width: 100%;
+    position: relative;
+    color: #051766;
+}
+    
+footer{
+    /* bottom: -50%; */
+    position: relative;
+}
+  
+body{
+    height: 120rem;
+}
+
+.body-wrapper-location{
+    margin-top: 4rem;
+}
+  
+.room-container{
+    display: flex;
+    flex-direction: column;
+}
+  
+.room-container-row{
+    display: flex;
+    flex-direction: row;
+}
+  
+.room{
+    width: 100%;
+    flex: 1;
+    height: 20rem;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+  
+.img{
+    width: 100%;
+    height: 17rem;
+    background-position: center;
+    background-size: cover;
+}
+  
+.sub{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #051766;
+}
+  
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-cell{
+    flex: 1;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card{
+    padding: 1.5rem;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 82, 0.226);
+}
+
+.content-card-img{
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.content-card-text{
+    color: #051766;
+}
+
+.card-type{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-name{
+    margin-bottom: 0.5rem;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.card-address{
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.card-distance{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+#card-01{
+    background-image: url(../img/Cards/la-galia.jpg);
+}
+#card-02{
+    background-image: url(../img/Cards/baden-baden.jpg);
+}
+#card-03{
+    background-image: url(../img/Cards/estacao-trem.jpg);
+}
+#card-04{
+    background-image: url(../img/Cards/teleferico_campos.jpg);
+}
+#card-05{
+    background-image: url(../img/Cards/davos-maison.jpg);
+}
+#card-06{
+    background-image: url(../img/Cards/la-galia.jpg);
+}
