@@ -14,6 +14,7 @@ Este projeto tem como premissa didática,
 
 - [x] Desenvolvimento de projeto.
 - [x] Projeto base.
+- [ ] Readme.
 - [ ] Responsividade.
 - [ ] Testes e implementações.
 
