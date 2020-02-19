@@ -5,7 +5,7 @@
 
 # Blue Mountain - Resort & Spa.
 
-> Projeto piloto criado utilizando uma versão do Bootstrap 4.2.1.
+> Projeto criado utilizando CSS3 e HTML.
 
 ---
 <div style="width: 100%;">
