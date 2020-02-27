@@ -8,11 +8,13 @@
 > Projeto criado utilizando CSS3 e HTML.
 
 ---
+
 <div style="width: 100%;">
 <img src="./img/Readme/landing-animation.gif" alt="Animation" width="1500">
 
 <img src="./img/Readme/layout.jpg" alt="Responsive" width="1500">
 </div>
+
 ---
 
 ## Uso de Marca e projeto.
