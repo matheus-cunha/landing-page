@@ -7,6 +7,8 @@
 
 > Projeto criado utilizando CSS3 e HTML.
 
+> Prévia hospedada em https://blue-mountain-resort.herokuapp.com/
+
 ---
 
 <div style="width: 100%;">
